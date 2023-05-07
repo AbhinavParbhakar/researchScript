@@ -2,7 +2,7 @@
 sudo apt-get install mlocate
 sudo apt autoremove
 ZIPLOCATION=$(locate "The Tokarsky-Marinov Finder, Tester and Prover.zip" |grep '/Downloads/')
-java
+java -version &> /dev/null
 if [ $? -ne 0 ]; then
     echo "Java not installed on this machine. Please Install Java:"
     echo "Use the following link:"
